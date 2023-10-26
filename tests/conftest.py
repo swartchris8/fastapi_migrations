@@ -1,9 +1,9 @@
 import pytest
 import sqlalchemy
 from pytest_alembic.config import Config
-from alembic.config import Config as AlembicConfig
 
 from pathlib import Path
+
 
 repo_root_dir = Path(__file__).parent.parent
 
@@ -14,8 +14,6 @@ ALEMBIC_INI_PATH = str(
 ALEMBIC_SCRIPTS_PATH = str(repo_root_dir / "server" / "alembic")
 
 SQLITE_DB_PATH = str(repo_root_dir / "sql_app.db")
-
-from pytest_alembic.config import Config
 
 
 @pytest.fixture
