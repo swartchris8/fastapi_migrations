@@ -3,3 +3,5 @@ alembic
 sqlalchemy
 python-dotenv
 uvicorn
+pytest
+pytest-alembic

@@ -1,7 +1,7 @@
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
 
-from . import crud, schemas
+from server import crud, schemas
 from server.db.session import SessionLocal
 
 
