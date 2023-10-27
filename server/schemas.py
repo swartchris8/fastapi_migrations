@@ -30,7 +30,9 @@ class User(UserBase):
     id: int
     is_active: bool
     items: list[Item] = []
-    cats: int = 0
+    cats: int | None = 0
+    dogs: int | None = 0
+    sheep: int | None = 0
 
     class Config:
         orm_mode = True

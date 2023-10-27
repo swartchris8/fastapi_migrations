@@ -12,6 +12,8 @@ class User(Base):
     hashed_password = Column(String)
     is_active = Column(Boolean, default=True)
     cats = Column(Integer)
+    dogs = Column(Integer)
+    sheep = Column(Integer, default=5)
 
     items = relationship("Item", back_populates="owner")
 
